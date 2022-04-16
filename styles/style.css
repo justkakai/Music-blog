@@ -34,38 +34,18 @@ body {
   animation: horizontal-scroll 2s linear infinite alternate-reverse;
 }
 
-/*
 header {
+  position: relative;
   width: 100%;
   height: 40rem;
-  border: 5px solid plum;
-  .header-content {
-    display: flex;
-    height: 100%;
-    width: 100%;
-  }
-  .carousel-slide {
-    height: 100%;
-    width: 100%;
-    img {
-      height: 100%;
-      width: 100vw;
-      object-position: center;
-      object-fit: contain;
-    }
-  }
-}
-*/
-header {
-  width: 100%;
-  height: 40rem;
-  border: 5px solid plum;
+  border-left: 10px solid #c40f54;
+  border-right: 10px solid #c40f54;
+  background-color: black;
 }
 
 header .header-content {
   height: 100%;
-  width: 100%;
-  border: 5px solid black;
+  width: 40%;
   overflow: hidden;
 }
 
@@ -73,16 +53,43 @@ header .carousel-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   width: 100%;
 }
 
 header .carousel-slide img {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+header #prevBtn {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+}
+
+header #nextBtn {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+}
+
+header button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: #ffffff;
+  background: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 10px #929090, -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #929090, -5px -5px 10px #ffffff;
+  font-family: "Syne", sans-serif;
 }
 
 /********************************KEY FRAMES********************************/
