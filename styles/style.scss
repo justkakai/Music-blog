@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Syne:wght@700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.sliding-text-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  //   position: absolute;
+  background-color: rgb(226, 217, 217);
+  width: 100vw;
+  height: 60px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  span {
+    animation: horizontal-scroll 2s linear infinite alternate-reverse;
+  }
+}
+
+/*
+header {
+  width: 100%;
+  height: 40rem;
+  border: 5px solid plum;
+  .header-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-slide {
+    height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100vw;
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+}
+*/
+
+header {
+  width: 100%;
+  height: 40rem;
+  border: 5px solid plum;
+  .header-content {
+    height: 100%;
+    width: 100%;
+    border: 5px solid black;
+    overflow: hidden;
+  }
+  .carousel-slide {
+    // border: 8px solid lime;
+    display: flex;
+    // height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100vw;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
+
+/********************************KEY FRAMES********************************/
+
+@keyframes horizontal-scroll {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
