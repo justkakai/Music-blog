@@ -14,6 +14,11 @@ body {
   background-color: whitesmoke;
 }
 
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .sliding-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +40,9 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 100%;
   height: 40rem;
@@ -44,6 +52,7 @@ header {
 }
 
 header .header-content {
+  position: relative;
   height: 100%;
   width: 40%;
   overflow: hidden;
@@ -64,6 +73,20 @@ header .carousel-slide img {
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+header .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  width: 60%;
+  color: white;
+  font-family: "Syne", sans-serif;
+  font-size: 2.5em;
 }
 
 header #prevBtn {
@@ -87,8 +110,8 @@ header button {
   color: #ffffff;
   background: none;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px 10px #929090, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #929090, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 1px 1px 10px #929090, -1px -1px 10px #ffffff;
+          box-shadow: 1px 1px 10px #929090, -1px -1px 10px #ffffff;
   font-family: "Syne", sans-serif;
 }
 
