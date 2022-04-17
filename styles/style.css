@@ -31,9 +31,9 @@ header .carousel-slide img {
   height: 100%;
   width: 100%;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 header .text-container {
@@ -41,8 +41,8 @@ header .text-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2em;
   width: 60%;
   color: white;
@@ -68,17 +68,17 @@ header button {
   width: 100px;
   height: 30px;
   border: none;
-  color: #ffffff;
+  color: white;
   background: none;
   border-radius: 50px;
-  -webkit-box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
-  box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
+  -webkit-box-shadow: 1px 1px 4px #929090, -1px -1px 4px white;
+          box-shadow: 1px 1px 4px #929090, -1px -1px 4px white;
   font-family: "Syne", sans-serif;
 }
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -103,11 +103,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 3rem;
 }
 
@@ -124,7 +124,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   gap: 2rem;
   width: 100vw;
   padding: 4rem 6rem;
@@ -136,24 +136,24 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1rem;
   width: 30%;
   height: 700px;
   border-radius: 8px;
   background: none;
   -webkit-box-shadow: 2px 2px 10px #aa7791, -2px -2px 10px #aa7791;
-  box-shadow: 2px 2px 10px #aa7791, -2px -2px 10px #aa7791;
+          box-shadow: 2px 2px 10px #aa7791, -2px -2px 10px #aa7791;
   font-family: sans-serif;
   font-size: 20px;
 }
 
 .news-carousel .news-card img {
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 50%;
 }
@@ -164,8 +164,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1rem;
   background-color: #e9e9e9;
   padding: 1rem;
@@ -184,10 +184,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: auto;
   width: 100%;
 }
@@ -206,7 +206,7 @@ body {
   background: none;
   border-radius: 50px;
   -webkit-box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
-  box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
+          box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
   font-family: "Syne", sans-serif;
   font-weight: 700;
 }
@@ -216,8 +216,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   background-color: #e2d9d9;
   width: 100vw;
@@ -234,22 +234,22 @@ body {
 @-webkit-keyframes horizontal-scroll {
   from {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   to {
     -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }
 
 @keyframes horizontal-scroll {
   from {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   to {
     -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

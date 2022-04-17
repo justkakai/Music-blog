@@ -4,7 +4,7 @@
   align-items: center;
   padding-top: 3rem;
   h2 {
-    font-family: "Syne", sans-serif;
+    font-family: $primary-font;
     font-weight: 800;
     color: white;
     font-size: 35px;
@@ -24,8 +24,6 @@
     padding: 1rem;
     width: 30%;
     height: 700px;
-    // background: #ffffff;
-    // box-shadow: 0px 5px 8px #bebebe, -0px 0px 1px #91476c;
     // box-shadow: 5px 5px 10px #706f6f, -5px -5px 10px #706f6f;
     border-radius: 8px;
     background: none;
@@ -49,7 +47,7 @@
       line-height: 2.2rem;
     }
     h3 {
-      font-family: "Syne", sans-serif;
+      font-family: $primary-font;
       font-weight: 700;
       text-align: center;
     }
@@ -60,7 +58,7 @@
       margin-top: auto;
       width: 100%;
       span {
-        font-family: "Syne", sans-serif;
+        font-family: $primary-font;
         font-weight: 500;
         font-size: 0.9em;
       }
@@ -72,7 +70,7 @@
         background: none;
         border-radius: 50px;
         box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
-        font-family: "Syne", sans-serif;
+        font-family: $primary-font;
         font-weight: 700;
       }
     }
