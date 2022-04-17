@@ -1,21 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Syne:wght@500;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sliding-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #e2d9d9;
+  width: 100vw;
+  height: 60px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sliding-text-container span {
+  animation: horizontal-scroll 2s linear infinite alternate-reverse;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100%;
-  height: 40rem;
+  height: 42rem;
   border-left: 10px solid #c40f54;
   border-right: 10px solid #c40f54;
   background-color: black;
-  margin-bottom: 3rem;
 }
 
 header .header-content {
   position: relative;
   height: 100%;
-  width: 40%;
+  width: 42%;
   overflow: hidden;
 }
 
@@ -76,28 +115,8 @@ header button {
   font-family: "Syne", sans-serif;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-image: url(../images/gradient2.png);
-  overflow-x: hidden;
-}
-
-.main-container {
-  width: 100vw;
-  height: 100vh;
-}
-
 .news-container {
+  background-image: url(../images/gradient2.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +127,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 .news-container h2 {
@@ -117,6 +136,7 @@ body {
   color: white;
   font-size: 35px;
   border-bottom: 5px solid white;
+  margin-top: 1.5rem;
 }
 
 .news-carousel {
@@ -211,24 +231,35 @@ body {
   font-weight: 700;
 }
 
-.sliding-text-container {
+.playlist-section {
+  background-color: black;
+}
+
+.playlist-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  background-color: #e2d9d9;
-  width: 100vw;
-  height: 60px;
-  font-family: "Syne", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  padding: 6rem 3rem;
 }
 
-.sliding-text-container span {
-  animation: horizontal-scroll 2s linear infinite alternate-reverse;
+.playlist-container h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 35px;
+  border-bottom: 5px solid white;
+  margin-top: 1.5rem;
+}
+
+.playlist-container iframe {
+  margin-top: 4rem;
 }
 
 @-webkit-keyframes horizontal-scroll {
