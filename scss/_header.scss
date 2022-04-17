@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  border-left: 10px solid rgb(196, 15, 84);
+  border-right: 10px solid rgb(196, 15, 84);
+  background-color: black;
+  margin-bottom: 3rem;
+  .header-content {
+    position: relative;
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+  }
+  .carousel-slide {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    width: 60%;
+    color: white;
+    font-family: "Syne", sans-serif;
+    font-size: 2.5em;
+  }
+  #prevBtn {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 1em;
+  }
+  #nextBtn {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    background: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
+    font-family: "Syne", sans-serif;
+  }
+}
