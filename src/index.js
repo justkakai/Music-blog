@@ -1,11 +1,10 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const size = carouselImages[0].clientWidth;
 
 let counter = 1;
-const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -35,3 +34,5 @@ carouselSlide.addEventListener('transitionend', function() {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 })
+
+let randomColor = Math.floor(Math.random()*16777215).toString(16);
