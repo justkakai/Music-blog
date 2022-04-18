@@ -4,7 +4,7 @@ header {
   width: 100%;
   height: 42rem;
   border-left: 10px solid rgb(196, 15, 84);
-  border-right: 10px solid rgb(196, 15, 84);
+  // border-right: 10px solid rgb(196, 15, 84);
   background-color: black;
   // margin-bottom: 3rem;
   .header-content {
@@ -31,6 +31,7 @@ header {
     width: 60%;
     color: white;
     font-family: $primary-font;
+    font-weight: 600;
     font-size: 2.5em;
   }
   #prevBtn {

@@ -75,6 +75,9 @@
         box-shadow: 1px 1px 4px #929090, -1px -1px 4px #ffffff;
         font-family: $primary-font;
         font-weight: 700;
+        &:active {
+          box-shadow: 1px 1px 10px #929090, -1px -1px 10px #ffffff;
+        }
       }
     }
   }
