@@ -4,6 +4,11 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const size = carouselImages[0].clientWidth;
 
+const currentYear = document.getElementById('currYear');
+const d = new Date();
+let year = d.getFullYear();
+currentYear.textContent = year;
+
 let counter = 1;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -36,3 +41,4 @@ carouselSlide.addEventListener('transitionend', function() {
 })
 
 let randomColor = Math.floor(Math.random()*16777215).toString(16);
+
