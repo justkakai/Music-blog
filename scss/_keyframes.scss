@@ -1,9 +1,21 @@
 @keyframes horizontal-scroll {
-    from {
-      transform: translate(0, 0);
-    }
-  
-    to {
-      transform: translate(-50%, 0);
-    }
+  from {
+    transform: translate(0, 0);
   }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+/*
+@keyframes opacityAnimation {
+  from {
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 40px;
+  }
+}
+*/

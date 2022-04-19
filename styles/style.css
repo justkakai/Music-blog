@@ -46,7 +46,7 @@ header {
   position: relative;
   width: 100%;
   height: 42rem;
-  border-left: 10px solid #c40f54;
+  border-left: 10px solid black;
   background-color: black;
 }
 
@@ -66,6 +66,7 @@ header .carousel-slide {
 }
 
 header .carousel-slide img {
+  display: inline-block;
   height: 100%;
   width: 100%;
   -o-object-position: center;
@@ -78,15 +79,56 @@ header .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15rem;
+  margin: 2em 0;
   width: 60%;
   color: white;
   font-family: "Syne", sans-serif;
   font-weight: 600;
   font-size: 2.5em;
+}
+
+header .text-container a {
+  font-size: 20px;
+  color: white;
+}
+
+header .features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+header h1 {
+  font-size: 1.1em;
+}
+
+header h2 {
+  font-size: 1em;
+  color: #b9fb67;
+}
+
+header #dynamicHeading {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 header #prevBtn {
@@ -303,4 +345,16 @@ footer {
             transform: translate(-50%, 0);
   }
 }
+
+/*
+@keyframes opacityAnimation {
+  from {
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 40px;
+  }
+}
+*/
 /*# sourceMappingURL=style.css.map */

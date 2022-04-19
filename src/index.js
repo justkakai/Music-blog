@@ -4,6 +4,8 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const size = carouselImages[0].clientWidth;
 
+let dynamicHeading = document.getElementById('dynamicHeading');
+
 const currentYear = document.getElementById('currYear');
 const d = new Date();
 let year = d.getFullYear();
@@ -28,6 +30,7 @@ prevBtn.addEventListener('click', function() {
 })
 
 carouselSlide.addEventListener('transitionend', function() {
+    let text;
     if (carouselImages[counter].id === 'lastClone') {
         carouselSlide.style.transition = 'none';
         counter = carouselImages.length -2;
@@ -39,6 +42,25 @@ carouselSlide.addEventListener('transitionend', function() {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 })
+
+function displayDynamicText() {
+    let text;
+    if (carouselImages[counter].id === 'shimizu' || carouselImages[counter].id === 'firstClone') {
+        text = "inside yasuaki shimizu's innovative musical world";
+    } else if (carouselImages[counter].id === 'kilokish') {
+        text = 'kilo kish is an american gurl';
+    } else if (carouselImages[counter].id === 'obongjayar') {
+        text = 'have you heard abut obongjayar?';
+    } else if (carouselImages[counter].id === 'tdj') {
+        text = 'tdj shares new single `Addictive/Predictive`';
+    } else if (carouselImages[counter].id === 'zsela' || carouselImages[counter].id === 'lastClone') {
+        text = 'zsela is making her move';
+    }
+    dynamicHeading.textContent = text;
+}
+
+carouselSlide.addEventListener('transitionstart', displayDynamicText);
+window.addEventListener('DOMContentLoaded', displayDynamicText);
 
 let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
