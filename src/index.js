@@ -11,6 +11,13 @@ const d = new Date();
 let year = d.getFullYear();
 currentYear.textContent = year;
 
+const weekNumber = document.getElementById('weekNumber');
+let currentDate = new Date();
+let oneJan = new Date(currentDate.getFullYear(),0,1);
+let numberOfDays = Math.floor((currentDate - oneJan) / (24 * 60 * 60 * 1000));
+let result = Math.ceil(( currentDate.getDay() + 1 + numberOfDays) / 7);
+weekNumber.textContent = result;
+
 let counter = 1;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -63,4 +70,6 @@ carouselSlide.addEventListener('transitionstart', displayDynamicText);
 window.addEventListener('DOMContentLoaded', displayDynamicText);
 
 let randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+
 

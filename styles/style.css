@@ -155,6 +155,7 @@ header button {
   -webkit-box-shadow: 1px 1px 4px #929090, -1px -1px 4px white;
           box-shadow: 1px 1px 4px #929090, -1px -1px 4px white;
   font-family: "Syne", sans-serif;
+  font-weight: 700;
 }
 
 .news-container {
