@@ -31,12 +31,34 @@ html {
 }
 
 .sliding-text-container span {
-  -webkit-animation: horizontal-scroll 2s linear infinite normal;
-          animation: horizontal-scroll 2s linear infinite normal;
+  -webkit-animation: horizontal-scroll 25s linear infinite normal;
+          animation: horizontal-scroll 25s linear infinite normal;
 }
 
 .sliding-text-container a {
   color: black;
+}
+
+@-webkit-keyframes horizontal-scroll {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+@keyframes horizontal-scroll {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
 }
 
 header {
@@ -46,8 +68,8 @@ header {
   position: relative;
   width: 100%;
   height: 42rem;
-  border-left: 10px solid black;
-  background-color: black;
+  border-left: 10px solid #161616;
+  background-color: #161616;
 }
 
 header .header-content {
@@ -90,7 +112,6 @@ header .text-container {
       -ms-flex-align: center;
           align-items: center;
   gap: 15rem;
-  margin: 2em 0;
   width: 60%;
   color: white;
   font-family: "Syne", sans-serif;
@@ -115,6 +136,10 @@ header .features-section {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+}
+
+header .features-section a {
+  text-underline-position: below;
 }
 
 header h1 {
@@ -279,7 +304,7 @@ header button {
 }
 
 .playlist-section {
-  background-color: black;
+  background-color: #161616;
 }
 
 .playlist-container {
@@ -323,28 +348,6 @@ footer {
   font-family: "Syne", sans-serif;
   font-weight: 600;
   font-size: 1.4em;
-}
-
-@-webkit-keyframes horizontal-scroll {
-  from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-  }
-}
-
-@keyframes horizontal-scroll {
-  from {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  to {
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-  }
 }
 
 /*
